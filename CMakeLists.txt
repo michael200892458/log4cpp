@@ -36,7 +36,7 @@ ENDIF (WIN32)
   SET ( LOG4CPP_LIBRARY_NAME "log4cpp" )
 #ENDIF ( CMAKE_BUILD_TYPE MATCHES "Debug" )
 
-ADD_LIBRARY ( ${LOG4CPP_LIBRARY_NAME} SHARED
+ADD_LIBRARY ( ${LOG4CPP_LIBRARY_NAME} STATIC
   src/Appender.cpp
   src/AppenderSkeleton.cpp
   src/AppendersFactory.cpp
